@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
 
 body {
+  background-image: url(img/image_geometry_1.png);
+  background-repeat: no-repeat;
   width: 320px;
 
   /* border: 2px solid yellow; */
@@ -16,8 +18,9 @@ body {
   margin: 0;
 
   /* border: 5px solid red ; */
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: end;
+
+  /* justify-content: space-between; */
 }
 
 .container #logo {
@@ -44,38 +47,20 @@ body {
 .heading {
   display: flex;
   width: min-content;
-
-  /* border: 5px solid blue; */
   margin-left: 16px;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .heading #name {
   font-family: 'Playfair Display', serif;
-
-  /* border: 5px solid blue; */
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-
-  /* width: 320px; */
   margin-top: 0;
   margin-bottom: 20px;
-
-  /* width: 320px; */
-}
-
-.intro {
-  display: flex;
-
-  /* border: 5px solid orange; */
-  margin-left: 16px;
-  margin-top: 20px;
-  margin-right: 16px;
-  flex-wrap: wrap;
-  height: fit-content;
 }
 
 #intro-heading {
@@ -91,20 +76,20 @@ body {
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #1a2236;
-
-  /* margin: 0; */
   margin-bottom: 0;
   margin-top: 0;
 }
 
 .button {
-  display: flex;
   background: #1a2236;
-  margin-left: 16px;
+  margin-left: 0;
   margin-top: 40px;
-  margin-right: 16px;
-  justify-content: center;
+  margin-right: 0;
   height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #btn {
@@ -115,6 +100,5 @@ body {
   line-height: 24px;
   color: #fff;
   text-decoration: none;
-  align-self: center;
   cursor: pointer;
 }
