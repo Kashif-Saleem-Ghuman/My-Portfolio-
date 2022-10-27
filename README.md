@@ -1,11 +1,11 @@
 # My portfolio project
 
-> In this project i have set up a my-portfolio repository. The goal of the project was to acquire skills in using linters, git, github flow, document my repo in a professional, using html semantic tags and using flex for all sections in css style sheet to lay out the elements on the page. 
+> In this project i have set up a my-portfolio repository. The goal of the project was to acquire skills in using linters, git, github flow, document my repo in a professional way, use html semantic tags and use flex for all sections in css style sheet to lay out the elements on the page. 
 
 
 ## Built With
 
-- Htmcl and Css
+- Html and Css
 - Git and Github
 - Vs Code
 
