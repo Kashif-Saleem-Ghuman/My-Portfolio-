@@ -33,6 +33,11 @@ body {
   align-self: center;
   margin-right: 16px;
   color: black;
+}
+
+.container #bars button {
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -54,6 +59,10 @@ body {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
+
+  /* width: 320px; */
+  margin-top: 0;
+  margin-bottom: 20px;
 
   /* width: 320px; */
 }
@@ -84,29 +93,15 @@ body {
   color: #1a2236;
 
   /* margin: 0; */
-  margin-bottom: 5px;
-}
-
-#para {
-  width: 288px;
-  height: 126px;
-  left: 16px;
-  top: 224px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: -0.01em;
-  color: #1a2236;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .button {
   display: flex;
   background: #1a2236;
   margin-left: 16px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-right: 16px;
   justify-content: center;
   height: 50px;
