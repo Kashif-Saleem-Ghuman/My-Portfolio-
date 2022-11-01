@@ -489,6 +489,7 @@ ul {
 
 .h2 {
   font-family: 'Playfair Display', sans-serif;
+  /* font: optional; */
   font-style: normal;
   font-weight: 400;
   font-size: 10vw;
