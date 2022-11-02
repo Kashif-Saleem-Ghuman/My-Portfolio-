@@ -16,27 +16,17 @@
 body {
   background-image: url(img/image_geometry_1.png);
   background-repeat: no-repeat;
-  width: 320px;
+  background-size: 18vw;
+  width: 100%;
 }
 
 .container {
   display: flex;
-  background-color: none;
-  min-height: 74px;
+  justify-content: flex-end;
   padding: 0;
   margin: 0;
-
-  /* border: 5px solid red ; */
-  justify-content: end;
-
-  /* justify-content: space-between; */
-}
-
-.container #logo {
-  width: 111px;
-  height: 74px;
-  left: 0;
-  top: 0;
+  height: 12vw;
+  background-color: none;
 }
 
 .container #bars {
@@ -51,36 +41,38 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  font-size: 3vw;
 }
 
 .heading {
   display: flex;
-  width: min-content;
   margin-left: 16px;
   margin-top: 30px;
   flex-wrap: wrap;
+  margin-right: 16px;
+  flex-direction: column;
 }
 
 .heading #name {
   font-family: 'Playfair Display', serif;
-  font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 7vw;
   line-height: 100%;
   color: #1a2236;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  font-style: normal;
 }
 
 #intro-heading {
-  width: 288px;
+  width: 100%;
   left: 16px;
   top: 224px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 2vw;
+  line-height: 3vw;
   letter-spacing: -0.01em;
   color: #1a2236;
   margin-bottom: 0;
@@ -92,7 +84,7 @@ body {
   margin-left: 0;
   margin-top: 40px;
   margin-right: 0;
-  height: 50px;
+  height: 10vw;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -101,41 +93,43 @@ body {
 
 .btn {
   font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 6vw;
+  line-height: 2vw;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  font-style: normal;
 }
 
 .container2 {
   display: grid;
   grid-template-rows: auto auto auto auto;
-  margin-top: 32px;
+  margin-top: 10vw;
+  margin-right: 2vw;
 }
 
 .container2 #projects {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 10vw;
   line-height: 100%;
   color: #1a2236;
-  margin-top: 40px;
+  margin-top: 5vw;
   margin-left: 16px;
 }
 
-.container2 img {
-  margin-top: 32px;
+.images {
+  width: 100%;
+  margin-top: 10vw;
 }
 
 .description-container {
   display: flex;
   flex-wrap: wrap;
-  width: 320px;
-  height: 156px;
+  width: 100vw;
+  height: 45vw;
   background: #1a2236;
   backdrop-filter: blur(0.5px);
   margin-top: -1px;
@@ -143,65 +137,70 @@ body {
 }
 
 .project-name {
-  width: 264px;
-  height: 16px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
+  width: 100vw;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 80%;
+  font-size: 8vw;
+  line-height: 12vw;
   color: #fff;
-  margin: 20px 36px 16px 20px;
+  font-family: 'Poppins', sans-serif;
+  height: 5vw;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  font-style: normal;
 }
 
 #language-container {
   display: flex;
-  margin-left: 20px;
   width: 100%;
   margin-right: 50px;
   justify-content: space-between;
   align-items: center;
+  margin-top: 7vw;
+  margin-left: 2vw;
 }
 
 .languages {
   display: flex;
-  width: 69px;
-  height: 20px;
+  height: 10vw;
   background: #98dede;
   justify-content: center;
+  width: 20vw;
 }
 
 .text {
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10.3334px;
+  font-size: 3vw;
   line-height: 80%;
   color: #1a2236;
   align-self: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .link-container {
   display: flex;
-  width: 178px;
-  height: 44px;
   border: 1px solid #fff;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 1vw;
+  margin-right: 4vw;
+  width: 65%;
+  height: 15vw;
 }
 
 #see-this-project {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 6vw;
+  line-height: 7vw;
   text-align: center;
   color: #fff;
-  margin-left: 10px;
+  margin-left: 3vw;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  align-self: center;
 }
 
 #arrow {
@@ -211,18 +210,18 @@ body {
 }
 
 #arrow a {
-  font-size: x-large;
-  font-style: normal;
+  font-size: 8vw;
   font-weight: 100;
   background: none;
   color: #fff;
   background-color: none;
   text-decoration: none;
   align-self: center;
+  font-style: bold;
 }
 
 #arrow a:hover {
-  font-size: xx-large;
+  font-size: 10vw;
   margin-bottom: 5px;
 }
 
@@ -236,33 +235,33 @@ body {
 
 #about {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-family: 'Playfair Display', serif;
   font-style: normal;
-  font-size: 50px;
+  font-size: 12vw;
   line-height: 100%;
   color: #1a2236;
   font-weight: 400;
-  margin-left: 0;
+  margin-left: 2vw;
+  margin-top: 5vw;
   margin-bottom: 0;
 }
 
 #myintro {
   display: flex;
   flex-wrap: wrap;
-  height: 126px;
+  height: 36vw;
   left: 16px;
   top: 2932px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  width: 288px;
+  font-size: 4vw;
+  line-height: 6vw;
+  width: 90vw;
   color: #1a2236;
-  margin-top: 20px;
-  margin-left: 0;
+  margin-top: 5vw;
+  margin-left: 2vw;
 }
 
 #ic {
@@ -270,7 +269,11 @@ body {
   align-items: center;
   justify-content: center;
   background-color: none;
-  width: 50px;
+  margin-left: 2vw;
+}
+
+#image {
+  width: 10vw;
 }
 
 #unique {
@@ -279,16 +282,16 @@ body {
 
 .container4 {
   display: grid;
-  background-color: #1c528a;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 45vw;
   gap: 10px;
-  margin-top: 40px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-top: 10vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
   background-image: url(img/hash.png);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 102px 102px;
+  background-size: 20vw 20vw;
+  background-color: #1c528a;
 }
 
 .title-about {
@@ -298,20 +301,20 @@ body {
   margin-left: 50px;
   margin-bottom: 21px;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 7vw;
   line-height: 30px;
   color: #fff;
   font-style: normal;
 }
 
 .list {
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 5vw;
   color: #fff;
   font-style: normal;
   padding-left: 65px;
   height: 200px;
+  font-weight: 800;
+  line-height: 10vw;
 }
 
 ul {
@@ -328,27 +331,196 @@ ul {
 .container5 {
   display: grid;
   background-color: #e2505c;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 56vw;
   gap: 10px;
-  margin-top: 40px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-top: 5vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
   background-image: url(img/Group\ 18@2x.png);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 102px 102px;
+  background-size: 20vw 20vw;
 }
 
 .container6 {
   display: grid;
-  background-color: #febf52;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 55vw;
   gap: 10px;
-  margin-top: 40px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-top: 5vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
   background-image: url(img/ic_skills@2x.png);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 102px 102px;
+  background-size: 25vw 25vw;
+  background-color: #febf52;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9fa;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 10vw;
+}
+
+.contact__text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+  padding: 20px;
+  clear: both;
+}
+
+.contact__form {
+  display: grid;
+  grid-template-columns: 1;
+  grid-gap: 10px;
+}
+
+.name {
+  height: 10vw;
+  width: auto;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  background: #fff;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.email {
+  height: 10vw;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #1a2236;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.message {
+  height: 20vw;
+  background: #fff;
+  border: 1px solid #dfffe0;
+  border-radius: 4px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.contact__button {
+  height: 70px;
+  left: 16px;
+  top: 3090px;
+  background: #1a2236;
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact__button:hover {
+  background-color: #404d68;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  background: #1a2236;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vw;
+}
+
+.footer__button {
+  background-color: transparent;
+  justify-content: flex-start;
+  border: 0;
+  width: 100%;
+  margin-left: 5vw;
+  margin-top: 5vw;
+  display: flex;
+}
+
+.social {
+  width: 6vw;
+}
+
+.socials {
+  display: flex;
+  padding: 0;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  align-items: baseline;
+  margin-bottom: 5vw;
+  justify-content: space-between;
+}
+
+.socials li {
+  list-style-type: none;
+}
+
+.footer__button__text {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 5vw;
+  color: #92dcdc;
+}
+
+.footer__button__image {
+  margin-left: 3vw;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  align-self: center;
+  width: 5vw;
+}
+
+.corner__geometry {
+  height: 20vw;
+  width: 20vw;
+  margin: 0;
+}
+
+.corner__geometry img {
+  width: 20vw;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 550px;
+}
+
+.h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10vw;
+  line-height: 100%;
+  color: #1a2236;
+  padding-left: 20px;
+  clear: both;
+}
+
+::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2vw;
+  color: #7d7c84;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  margin-left: 1vw;
+  margin-top: 1vw;
 }
