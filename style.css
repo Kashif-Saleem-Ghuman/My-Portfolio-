@@ -357,6 +357,8 @@ ul {
 }
 
 .contact {
+  display: flex;
+  flex-direction: column;
   background: #f9f9fa;
   margin-left: 2vw;
   margin-right: 2vw;
