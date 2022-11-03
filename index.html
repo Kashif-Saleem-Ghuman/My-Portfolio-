@@ -16,31 +16,44 @@
         <button><i class="fa fa-bars" style="color:black;"></i></button>
       </div>
     </nav>
+    <nav class="desktop-container">
+      <ul class="desktop-navigation">
+        <li><a href="#desktop-hello">Hello</a></li>
+        <li>Portfolio</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
   </header>
   
   <main>
-    <section class="heading">
-     <h1 id="name">
-       Kashif Saleem
-      </h1>
-     <p id="intro-heading">
-       Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
-        If you like what you see and have a project you need coded, don’t hesitate and contact me.
-      </p>
-      <div class="button">
-        <a class="btn" href="">Start collaboraton</a>
-      </div>
-   </section>
+    <section class="heading desktop-container-hello" id="desktop-hello">
+     
+      <h1 id="name" class="desktop-name">
+         Kashif Saleem
+        </h1>
+      <p id="intro-heading" class="desktop-intro">
+         Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
+          If you like what you see and have a project you need coded, don’t hesitate and contact me.
+        </p>
+        <button class="button">
+          <a class="btn" href="">Start collaboraton</a>
+        </button>
+        <img id="dot-image" src="images/image_dots.svg" alt="Dot images">
+      
+      <img class="desktop-image-header" src="images/image-geometry_1.svg" alt="A geomertrical image">
+    </section>
   
-    <section class="container2">
-      <img class="images" src="img/image_geometry_2.svg" alt="">
+  
+    <article class="container2 ">
+      <img class="images desktop-none" src="img/image_geometry_2.svg" alt="">
       <h2 id="projects">
         Projects
       </h2>
       <img class="images" src="img/Rectangle 21.png" alt="Image of a laptop">
       <div class="description-container">
         <h2 class="project-name">Project name goes here</h2>
-       <div id="language-container">
+        <div id="language-container">
           <div class="languages"> <div class="text">HTML/CSS</div></div>
           <div class="languages"> <div class="text">Ruby on Rails</div></div>
           <div class="languages"> <div class="text">JavaScript</div> </div>
@@ -50,9 +63,9 @@
           <div id="arrow"><a href="#">&#x2192</a></div>
         </div>
       </div>
-    </section>
+    </article>
     
-    <section class="class-container2">
+    <article class="class-container2">
      <img class="images" src="img/22.png" alt="">
      <div class="description-container">
        <h2 class="project-name">Project name goes here</h2>
@@ -66,9 +79,9 @@
           <div id="arrow"><a href="#">&#x2192</a></div>
         </div>
       </div>
-    </section>
+    </article>
 
-   <section class="class-container2">
+   <article class="class-container2">
       <img class="images" src="img/23.png" alt="">
       <div class="description-container">
         <h2 class="project-name">Project name goes here</h2>
@@ -82,9 +95,9 @@
          <div id="arrow"><a href="#">&#x2192</a></div>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="class-container2">
+    <article class="class-container2">
       <img class="images" src="img/24.png" alt="">
       <div class="description-container">
         <h2 class="project-name">Project name goes here</h2>
@@ -98,9 +111,9 @@
          <div id="arrow"><a href="#">&#x2192</a></div>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="class-container2">
+    <article class="class-container2">
       <img class="images"  src="img/25.png" alt="">
       <div class="description-container">
         <h2 class="project-name">Project name goes here</h2>
@@ -114,9 +127,9 @@
          <div id="arrow"><a href="#">&#x2192</a></div>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="class-container2">
+    <article class="class-container2">
       <img class="images"  src="img/26.png" alt="">
       <div class="description-container">
        <h2 class="project-name">Project name goes here</h2>
@@ -130,11 +143,12 @@
          <div id="arrow"><a href="#">&#x2192</a></div>
        </div>
       </div>
-   </section>
+    </article>
+  
 
-    <section class="container3">
+    <article class="container3">
       <h1 id="about">
-      About
+        About
       </h1>
       <p id="myintro">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -148,9 +162,9 @@
         <a href="#" id="cv-image"><img src="img/ic_download.png" alt=""></a>
         </div>
       </div>
-    </section>
+    </article>
 
-    <section class="container4">
+    <article class="container4">
       <h1 class="title-about">Languages</h1>
      <div class="list">
         <ul>
@@ -160,9 +174,9 @@
           <li>CSS</li>
         </ul>
       </div>
-    </section>
+    </article>
 
-    <section class="container5">
+    <article class="container5">
       <h1 class="title-about">Frameworks</h1>
       <div class="list">
         <ul>
@@ -174,9 +188,9 @@
 
         </ul>
       </div>
-    </section>
+    </article>
 
-    <section class="container6">
+    <article class="container6">
       <h1 class="title-about">Skills</h1>
       <div class="list">
         <ul>
@@ -187,7 +201,8 @@
           <li>Terminal</li>
        </ul>
       </div>
-    </section>
+    </article>
+    
   
 
   
@@ -198,10 +213,10 @@
 
       <h2 class="h2">Get Started</h2>
       <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-    <form action="https://formspree.io/f/xeqdpkpy" method="post" class="contact__form"> <!-- change made -->
+    <form action="https://formspree.io/f/xeqdpkpy" method="post" class="contact__form"> 
       <input type="text" required maxlength="30" placeholder="your name" name="name" class="name">
-      <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="your email" name="email" class="email">
-      <textarea type="text" maxlength="500" placeholder="Enter your message here..." name="message" id="" class="message"  required> </textarea>
+      <input type="email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="your email" name="email" class="email">
+      <textarea type="text" maxlength="500" placeholder="Enter your message here..." name="message" id="" class="message"  required></textarea>
       <input type="submit" value="Start Collaboration" class="buttons contact__button">
      </form>
     </section>
