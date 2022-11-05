@@ -612,6 +612,7 @@
   .desktop-navigation li a {
     text-decoration: none;
     color: #1a2236;
+    transition: all 0.5s ease-out;
   }
 
   .desktop-container-hello {
@@ -1153,6 +1154,14 @@
     cursor: pointer;
   }
 
+  .animate__button {
+    transition: all 0.5s ease-out;
+  }
+
+  .animate__button:hover {
+    background-color: #606b86;
+  }
+
   .desktop-footer {
     display: flex;
     background: #1a2236;
@@ -1205,5 +1214,10 @@
     color: #92dcdc;
     width: 2.8vw;
     margin-bottom: 0.5vw;
+  }
+
+  .desktop-navigation li a:hover,
+  .desktop-navigation li a:focus {
+    font-size: 110%;
   }
 }
