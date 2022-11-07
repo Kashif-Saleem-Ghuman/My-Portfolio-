@@ -9,11 +9,9 @@
 - Git and Github
 - Vs Code
 
-## Live Demo (if available)
+## Live Demo 
 
-Not available
-
-To get a local copy up and running follow these simple example steps.
+https://kashif-saleem-ghuman.github.io/My-Portfolio-/
 
 ### Prerequisites
 
