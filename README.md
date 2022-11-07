@@ -11,7 +11,7 @@
 
 ## Live Demo 
 
-[Live Demo Link]([https://kashif-saleem-ghuman.github.io/My-Portfolio-/)
+https://kashif-saleem-ghuman.github.io/My-Portfolio-/
 
 ### Prerequisites
 
