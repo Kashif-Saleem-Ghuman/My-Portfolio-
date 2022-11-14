@@ -34,12 +34,10 @@
     padding: 0;
     margin: 0;
     height: 12vw;
-    background-color: none;
   }
 
   .container #bars {
     font-size: larger;
-    background-color: none;
     align-self: center;
     margin-right: 16px;
     color: black;
@@ -59,6 +57,7 @@
     flex-wrap: wrap;
     margin-right: 16px;
     flex-direction: column;
+    clear: both;
   }
 
   .heading #name {
@@ -222,10 +221,8 @@
     font-weight: 100;
     background: none;
     color: #fff;
-    background-color: none;
     text-decoration: none;
     align-self: center;
-    font-style: bold;
   }
 
   #arrow a:hover {
@@ -276,7 +273,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: none;
     margin-left: 2vw;
   }
 
@@ -333,7 +329,6 @@
     display: flex;
     color: black;
     float: right;
-    background-color: none;
   }
 
   .container5 {
@@ -387,7 +382,6 @@
 
   .contact__form {
     display: grid;
-    grid-template-columns: 1;
     grid-gap: 10px;
   }
 
@@ -549,6 +543,55 @@
     color: #1a2236;
     font-weight: 400;
   }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    float: right;
+    margin-top: 2vw;
+    margin-right: 2vw;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #1a2236;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .desktop-navigation {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .desktop-navigation.active {
+    left: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -575,17 +618,16 @@
     display: none;
   }
 
-  .desktop-container {
+  /* .desktop-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 10vw;
-  }
+  } */
 
   .desktop-navigation {
-    grid-column: 2/3;
     display: flex;
-    justify-content: space-between;
-    padding: 0;
+    justify-content: center;
+    gap: 4vw;
   }
 
   .desktop-arrow a {
@@ -593,10 +635,8 @@
     font-weight: 100;
     background: none;
     color: #1a2236;
-    background-color: none;
     text-decoration: none;
     align-self: center;
-    font-style: bold;
   }
 
   .desktop-navigation li {
@@ -705,7 +745,7 @@
     color: #1a2236;
     transform: rotate(-90deg);
     align-self: center;
-    justify-self: send;
+    justify-self: end;
     padding-left: 23%;
   }
 
@@ -796,7 +836,6 @@
     font-size: 1.5vw;
     line-height: 1vw;
     color: #1a2236;
-    padding: auto;
   }
 
   .desktop-see-this-project {
@@ -999,7 +1038,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: none;
     margin-left: 1vw;
   }
 
@@ -1219,5 +1257,10 @@
   .desktop-navigation li a:hover,
   .desktop-navigation li a:focus {
     font-size: 110%;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
   }
 }
