@@ -116,7 +116,7 @@
     margin-right: 2vw;
   }
 
-  .container2 #projects {
+  .projects {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 400;
@@ -582,7 +582,7 @@
     flex-direction: column;
     width: 100%;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
     background-color: white;
   }
 
@@ -590,8 +590,10 @@
     margin: 16px 0;
   }
 
-  .nav-link{
-
+  .nav-link {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 1.5rem;
   }
 
   .desktop-navigation.active {
