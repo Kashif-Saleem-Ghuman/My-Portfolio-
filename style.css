@@ -20,6 +20,18 @@
     width: 100%;
   }
 
+  .swiper {
+    width: 90%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+  }
+
+  .swiper-pagination {
+    width: 25%;
+  }
+
   .none-mobile {
     display: none;
   }
