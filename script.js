@@ -53,8 +53,85 @@ section.innerHTML = `
       <i class="fa-light fa-arrow-up-right-from-square"></i>
   <button type="button">See live <img src="images/Union_2.svg" alt=""></button> <br>
   <button type="button">See Source <img src="images/Vector.svg" alt=""></button>
- 
-    
-
-
 `;
+
+
+// Creating an array
+
+const projectInfo= [
+  {
+    projectTitle: 'Project #0',
+    description: 'project#0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
+    mainImage: ''
+    images: [],
+    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#'
+    linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
+  }
+
+  {
+    projectTitle: 'Project #1',
+    description: 'project#1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
+    mainImage: 
+    images: [],
+    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#'
+    linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
+  }
+
+  {
+    projectTitle: 'Project #2',
+    description: 'project#2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
+    mainImage: 
+    images: [],
+    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#'
+    linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
+  }
+
+  {
+    projectTitle: 'Project #3',
+    description: 'project#3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
+    mainImage: 
+    images: [],
+    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#'
+    linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
+  }
+
+  {
+    projectTitle: 'Project #4',
+    description: 'project#4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
+    mainImage: 
+    images: [],
+    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#'
+    linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
+  }
+
+  {
+    projectTitle: 'Project #5',
+    description: 'project#5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
+    mainImage: 
+    images: [],
+    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#'
+    linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
+  }
+  
+  ]
+  
+
+
+
+
+
+
+const open = document.querySelector(".see-more");
+open.addEventListener('click',()=>{
+  const projects = document.createElement('div');
+  const popup =  document.createElement('div');
+
+  popup.innerHTML
+}
+)
