@@ -82,7 +82,7 @@
           </div>
           <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(0)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -104,7 +104,7 @@
           </div>
           <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(1)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -126,7 +126,7 @@
           </div>
           <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(2)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -148,7 +148,7 @@
           </div>
           <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(3)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -170,7 +170,7 @@
           </div>
           <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(4)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -192,7 +192,7 @@
           </div>
           <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(5)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -216,7 +216,7 @@
         </div>
         <nav class="desktop-link-container">
           <div class="desktop-see-this-project">See this project
-            <div class="desktop-arrow"><a href="#">&#x2192</a></div>
+            <div class="desktop-arrow"><a href="javascript:openModal(0)">&#x2192</a></div>
           </div>
         </nav>
       </div>
@@ -238,7 +238,7 @@
         </div>
         <nav class="desktop-link-container">
           <div class="desktop-see-this-project">See this project
-            <div class="desktop-arrow"><a href="#">&#x2192</a></div>
+            <div class="desktop-arrow"><a href="javascript:openModal(1)">&#x2192</a></div>
           </div>
         </nav>
       </div>
@@ -340,6 +340,53 @@
     </section>
     <!-- ---------End of the Contact section for desktop app -------------------------- -->
   </main>
+
+  <!--------------- Modal Pop Up --------->
+  <section id="modal" class="desktop-overlay">
+    <article class="modal-container">
+      <button onclick="closeModal(1)" class="close-button" type="button">&times;
+      </button>
+      <h2 class="modal-project-name">
+        Project #0
+      </h2>
+      <ul class="modal-languages">
+        <li class="modal-links">HTML/CSS</li>
+        <li class="modal-links">Ruby on Rails</li>
+        <li class="modal-links">JavaScript</li>
+      </ul>
+      <div class="modal-image-container">
+        <img id="Picture" class="modal-project-image" src="images/Rectangle 21 (3).svg"
+          alt="Laptop with colored screen">
+      </div>
+      <div class="modal-image-preview">
+        <img src="images/Rectangle 21 (3).svg" alt="Laptop project 1">
+        <img src="images/Rectangle 21 (2).svg" alt="Laptop project 2">
+        <img src="images/Rectangle 46.svg" alt="Laptop project 3">
+        <img src="images/Rectangle 34.svg" alt="Laptop project 4">
+      </div>
+
+      <p class="modal-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae totam ut labore, iste illum cupiditate
+        magnam deleniti? Eveniet expedita adipisci explicabo nobis dolorum? Esse nesciunt assumenda id, maiores aliquam
+        tenetur doloremque explicabo eum, odio molestiae ea ipsum modi officia. <br><br>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam odio quas expedita dolorum voluptate quibusdam
+        laborum deleniti ipsum sapiente tempora. Provident ipsum iusto eum reiciendis pariatur praesentium nisi iste
+        doloremque.
+      </p>
+      <div class="modal-button-container">
+        <button class="modal-link-button">
+          <a href="#">See Live <img src="images/ic_link.svg" alt="link logo"></a>
+        </button> <br>
+        <button class="modal-link-button">
+          <a href="#">See Source <img src="images/Vector.svg" alt="link logo"></a>
+        </button>
+      </div>
+      
+    </article>
+  </section>
+
+  <!--------------- Modal Pop Up --------->
 
   <!-- ---------The Footer section for desktop app-------------------------------->
   <footer class="footer desktop-footer">

@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 @media screen and (max-width: 767px) {
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
@@ -590,15 +591,13 @@
     position: fixed;
     left: -100%;
     height: 177vw;
-
-    /* top: 70px; */
     gap: 0;
     flex-direction: column;
     width: 100%;
     text-align: center;
     transition: 0.3s ease-in-out;
     background-color: white;
-    background-image: url("images/image_geometry_menu_1.svg"), url("images/top_menu_image.svg");
+    background-image: url(images/image_geometry_menu_1.svg), url(img/end.svg);
     background-position: top left, bottom;
     background-repeat: no-repeat;
     background-size: 80%, 100vw;
@@ -623,6 +622,107 @@
 
   .desktop-navigation.active {
     left: 0;
+  }
+
+  .modal-container {
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    padding: 5vw;
+  }
+
+  .close-button {
+    grid-row: 1/2;
+    background: none;
+    border: none;
+    color: #1a2236;
+    font-size: 10vw;
+    display: flex;
+    justify-content: end;
+    padding-right: 1vw;
+    cursor: pointer;
+  }
+
+  .modal-project-name {
+    grid-row: 2/3;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 0 5vw 0;
+    color: #1a2236;
+    font-size: 5vw;
+    font-weight: 700;
+  }
+
+  .modal-languages {
+    grid-row: 3/4;
+    display: flex;
+    gap: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .modal-links {
+    list-style: none;
+    color: #1a2236;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vw;
+    position: relative;
+    border: 1px solid #1a2236;
+    align-items: center;
+    padding: 2vw;
+  }
+
+  .modal-image-container {
+    grid-row: 4/5;
+    width: 100%;
+  }
+
+  .modal-image-container img {
+    width: 100%;
+  }
+
+  .modal-image-preview {
+    grid-row: 5/6;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: -1vw 0;
+  }
+
+  .modal-image-preview img {
+    width: 25%;
+  }
+
+  .modal-paragraph {
+    grid-row: 6/7;
+    font-family: 'Poppins', sans-serif;
+    color: #1a2236;
+    line-height: 3vw;
+    font-size: 3vw;
+    padding: 5vw 0;
+  }
+
+  .modal-button-container {
+    grid-row: 7/8;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-link-button {
+    height: 10vw;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border-color: #1a2236;
+    width: 60%;
+  }
+
+  .modal-link-button a {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5vw;
   }
 }
 
