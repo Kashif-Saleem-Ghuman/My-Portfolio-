@@ -12,13 +12,13 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 // const arr = ['hello', 'hi', 'bye'];
 
-const modal = [
+const projectCard = [
   {
     projectTitle: 'Project #1',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
-    mainImage: '',
-    images: 'src',
-    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    mainImage: './img/Rectangle 21.png',
+    images: ["img/Rectangle 21.png","img/22.png","img/23.png","img/24.png"],
+    technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
   },
@@ -26,9 +26,9 @@ const modal = [
   {
     projectTitle: 'Project #2',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
-    mainImage: 'src',
-    images: 'src',
-    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    mainImage: "./img/22.png",
+    images: ["img/Rectangle 21.png","img/22.png","img/23.png","img/24.png"],
+    technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
   },
@@ -36,9 +36,9 @@ const modal = [
   {
     projectTitle: 'Project #3',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
-    mainImage: 'src',
-    images: 'src',
-    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    mainImage: "./img/23.png",
+    images: ["img/Rectangle 21.png","img/22.png","img/23.png","img/24.png"],
+    technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
   },
@@ -46,9 +46,9 @@ const modal = [
   {
     projectTitle: 'Project #4',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
-    mainImage: 'src',
-    images: 'src',
-    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    mainImage: "./img/24.png",
+    images: ["img/Rectangle 21.png","img/22.png","img/23.png","img/24.png"],
+    technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
   },
@@ -56,9 +56,9 @@ const modal = [
   {
     projectTitle: 'Project #5',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
-    mainImage: 'src',
-    images: 'src',
-    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    mainImage: "./img/25.png",
+    images: ["img/Rectangle 21.png","img/22.png","img/23.png","img/24.png"],
+    technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
   },
@@ -66,17 +66,66 @@ const modal = [
   {
     projectTitle: 'Project #6',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias, quod recusandae asperiores similique quos aperiam aspernatur, ipsam autem fuga minima libero dolor accusantium corporis possimus quaerat repellat harum distinctio!',
-    mainImage: 'src',
-    images: 'src',
-    Technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    mainImage: './img/26.png',
+    images: ["img/Rectangle 21.png","img/22.png","img/23.png","img/24.png"],
+    technology: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: 'https://github.com/Kashif-Saleem-Ghuman/',
   }];
 
+
+  const modal = document.querySelector('#modal');
   
+// function openModal (index=null){
+//   if (index!=null){
+//     const { technology} = projectCard[index];
+//     let technologyList = "";
+//     technology.map((listedItem) => {
+//       console.log(listedItem)
+//     technologyList += `<li>${listedItem}</li>`
+//     } );
+
+//     const {images} = projectCard[index];
+//     let imagesList = '';
+//     images.map((listedItem) => {
+//       imagesList += `<img src="${listedItem}"</img>`;
+//   });
+
+  function openModal(num = null) {
+    if (num != null) {
+      const { technology } = projectCard[num];
+      let technologyList = '';
+      technology.forEach((listedItem) => {
+        technologyList += `<li>${listedItem}</li>`;
+      });
+  
+      const { images } = projectCard[num];
+      let imagesList = '';
+      images.forEach((listedImage) => {
+        imagesList += `<img src="${listedImage}"></img>`;
+      });
 
 
 
+  document.getElementById('modal-project-name').innerHTML = projectCard[num].projectTitle;
+  document.getElementById('modal-languages').innerHTML =  technologyList;
+  // document.getElementById('picture').src = projectCard[index].mainImage;
+  // document.querySelector('.modal-image-preview').innerHTML = imagesList;
+  // document.querySelector('#modal-project-live').href = modal[index].linkToLiveVersion;
+  // document.querySelector('#modal-project-source').href = modal[index].linkToSource;
+
+  modal.classList.add('active');
+}
+}
+
+
+function closeModal (index=null){
+  if (index!=null){
+    modal.classList.remove('active')
+  }}
+
+  openModal();
+  closeModal();
 
 
 

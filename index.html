@@ -342,15 +342,15 @@
   </main>
 
   <!--------------- Modal Pop Up --------->
-  <section id="modal" class="desktop-overlay">
+  <section id="modal" class="card-hidden">
     <article class="modal-container">
       <button onclick="closeModal(1)" class="close-button" type="button">&times;
       </button>
-      <h2 class="modal-project-name">
+      <h2 class="modal-project-name" id="modal-project-name">
         Project #0
       </h2>
-      <ul class="modal-languages">
-        <li class="modal-links">HTML/CSS</li>
+      <ul class="modal-languages" id="modal-languages">
+        <li class="modal-links" id="modal-link" >HTML/CSS</li>
         <li class="modal-links">Ruby on Rails</li>
         <li class="modal-links">JavaScript</li>
       </ul>
@@ -375,7 +375,7 @@
         doloremque.
       </p>
       <div class="modal-button-container">
-        <button class="modal-link-button">
+        <button class="modal-link-button" id="project-live">
           <a href="#">See Live <img src="images/ic_link.svg" alt="link logo"></a>
         </button> <br>
         <button class="modal-link-button">
