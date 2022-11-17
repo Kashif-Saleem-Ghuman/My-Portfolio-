@@ -85,13 +85,13 @@ function openModal(num = null) {
   if (num != null) {
     const { technology } = projectCard[num];
     let technologyList = '';
-    technology.map((listedItem) => {
+    technology.forEach((listedItem) => {
       technologyList += `<li>${listedItem}</li>`;
     });
 
     const { images } = projectCard[num];
     let imagesList = '';
-    images.map((listedImage) => {
+    images.forEach((listedImage) => {
       imagesList += `<img src="${listedImage}"></img>`;
     });
 
