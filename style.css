@@ -1,4 +1,4 @@
-/* stylelint-disable no-descending-specificity */
+
 @media screen and (max-width: 767px) {
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
@@ -735,14 +735,6 @@
     border-color: #1a2236;
     width: 60%;
   }
-
-  .modal-link-button a {
-    text-decoration: none;
-    color: #1a2236;
-    font-size: 4vw;
-    font-weight: 500;
-    line-height: 5vw;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -769,11 +761,29 @@
     display: none;
   }
 
-  /* .desktop-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 10vw;
-  } */
+  .modal-link-button a {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5vw;
+  }
+
+  .modal-link-button-1 a {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 5vw;
+  }
+
+  .modal-link-button-2 a {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 5vw;
+  }
 
   .desktop-navigation {
     display: flex;
@@ -1544,22 +1554,6 @@
     width: 70%;
     align-self: center;
     justify-self: center;
-  }
-
-  .modal-link-button-1 a {
-    text-decoration: none;
-    color: #1a2236;
-    font-size: 1.5vw;
-    font-weight: 500;
-    line-height: 5vw;
-  }
-
-  .modal-link-button-2 a {
-    text-decoration: none;
-    color: #1a2236;
-    font-size: 1.5vw;
-    font-weight: 500;
-    line-height: 5vw;
   }
 
   .modal-link-button-1:hover {
