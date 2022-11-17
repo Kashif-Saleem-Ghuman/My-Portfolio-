@@ -8,6 +8,8 @@
   <title>Kashif Saleem Portfolio Web Page</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 
@@ -28,12 +30,13 @@
       <li class="nav-item"><a href="#desktop-about" class="nav-link">About</a></li>
       <li class="nav-item"><a href="#desktop-contact" class="nav-link">Contact</a></li>
     </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </header>
-  <div class="hamburger">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
+
   <!----------- End of the top Nav bar section for desktop app -------------------- -->
 
   <main>
@@ -62,7 +65,7 @@
       <h2 id="projects" class="desktop-projets-heading-1 projects">
         Projects
       </h2>
-      
+
       <article class="container2 desktop-project-1">
         <img class="images" src="img/Rectangle 21.png" alt="A deccorative laptop background">
         <div class="description-container">
@@ -78,9 +81,9 @@
               <div class="text">JavaScript</div>
             </div>
           </div>
-          <div class="link-container">
+          <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(0)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -100,9 +103,9 @@
               <div class="text">JavaScript</div>
             </div>
           </div>
-          <div class="link-container">
+          <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(1)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -122,9 +125,9 @@
               <div class="text">JavaScript</div>
             </div>
           </div>
-          <div class="link-container">
+          <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(2)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -144,9 +147,9 @@
               <div class="text">JavaScript</div>
             </div>
           </div>
-          <div class="link-container">
+          <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(3)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -166,9 +169,9 @@
               <div class="text">JavaScript</div>
             </div>
           </div>
-          <div class="link-container">
+          <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(4)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -188,9 +191,9 @@
               <div class="text">JavaScript</div>
             </div>
           </div>
-          <div class="link-container">
+          <div class="link-container see-more">
             <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="#">&#x2192</a></div>
+            <div id="arrow"><a href="javascript:openModal(5)">&#x2192</a></div>
           </div>
         </div>
       </article>
@@ -214,7 +217,7 @@
         </div>
         <nav class="desktop-link-container">
           <div class="desktop-see-this-project">See this project
-            <div class="desktop-arrow"><a href="#">&#x2192</a></div>
+            <div class="desktop-arrow"><a href="javascript:openModal(0)">&#x2192</a></div>
           </div>
         </nav>
       </div>
@@ -236,7 +239,7 @@
         </div>
         <nav class="desktop-link-container">
           <div class="desktop-see-this-project">See this project
-            <div class="desktop-arrow"><a href="#">&#x2192</a></div>
+            <div class="desktop-arrow"><a href="javascript:openModal(1)">&#x2192</a></div>
           </div>
         </nav>
       </div>
@@ -322,22 +325,76 @@
       <p class="contact__text desktop-contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <form action="https://formspree.io/f/xeqdpkpy" method="post" class="contact__form desktop-contact-form">
+      <form action="https://formspree.io/f/xeqdpkpy" method="post" class="contact__form desktop-contact-form" id="form">
         <label class="none-mobile desktop-label-name" for="name">Your name:</label><br>
         <input type="text" required maxlength="30" placeholder="your name" name="name" id="name"
           class="name desktop-form-name">
         <label class="none-mobile desktop-label-email" for="email">Your email:</label><br>
-        <input type="email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="your email"
-          name="email" id="email" class="email desktop-form-email">
+        <input type="email"  placeholder="your email"
+          name="email" id="email" class="email desktop-form-email" required>
         <label class="none-mobile desktop-label-message" for="message">Message:</label><br>
         <textarea type="text" maxlength="500" placeholder="Enter your message here..." name="message" id="message"
           class="message desktop-message" required></textarea>
+          <div id="error"></div>
         <input type="submit" value="Start Collaboration"
           class="buttons contact__button animate__button desktop-form-button">
       </form>
     </section>
     <!-- ---------End of the Contact section for desktop app -------------------------- -->
   </main>
+
+  <!--------------- Modal Pop Up --------->
+  <section id="modal" class="card-hidden">
+    <article class="modal-container">
+      <button onclick="closeModal(1)" class="close-button" type="button">&times;
+      </button>
+      <h2 class="modal-project-name" id="modal-project-name">
+        Project #0
+      </h2>
+      <ul class="modal-languages" id="modal-languages">
+        <li class="modal-links" id="modal-link">HTML/CSS</li>
+        <li class="modal-links">Ruby on Rails</li>
+        <li class="modal-links">JavaScript</li>
+      </ul>
+      <div class="modal-image-container">
+        <img id="Picture" class="modal-project-image" src="images/Rectangle 21 (3).svg"
+          alt="Laptop with colored screen">
+      </div>
+      <div class="modal-image-preview">
+        <img src="images/Rectangle 21 (3).svg" alt="Laptop project 1">
+        <img src="images/Rectangle 21 (2).svg" alt="Laptop project 2">
+        <img src="images/Rectangle 46.svg" alt="Laptop project 3">
+        <img src="images/Rectangle 34.svg" alt="Laptop project 4">
+      </div>
+
+      <p class="modal-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vitae totam ut labore, iste illum cupiditate
+        magnam deleniti? Eveniet expedita adipisci explicabo nobis dolorum? Esse nesciunt assumenda id, maiores aliquam
+        tenetur doloremque explicabo eum, odio molestiae ea ipsum modi officia. <br><br>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam odio quas expedita dolorum voluptate quibusdam
+        laborum deleniti ipsum sapiente tempora. Provident ipsum iusto eum reiciendis pariatur praesentium nisi iste
+        doloremque.
+      </p>
+      <div class="modal-button-container">
+        <button class="modal-link-button-1 modal-link-button">
+          <a id="project-live" target="_blank" href="https://github.com/Kashif-Saleem-Ghuman">See Live <img
+              src="images/ic_link.svg" alt="link logo"></a>
+        </button> <br>
+        <button class="modal-link-button-2 modal-link-button">
+          <a id="modal-project-source" target="_blank" href="https://github.com/Kashif-Saleem-Ghuman">See Source <img
+              src="images/Vector.svg" alt="link logo"></a>
+        </button>
+      </div>
+      <div class="modal-previous-next none-mobile">
+        <a id="modal-previous" href="#"><span class="arrow-1">&#8592</span> <span>Previous Project</span></a>
+        <a id="modal-next" href="#"> <span>Next Project</span><span class="arrow-2">&#8594</span></a>
+      </div>
+
+    </article>
+  </section>
+
+  <!--------------- Modal Pop Up --------->
 
   <!-- ---------The Footer section for desktop app-------------------------------->
   <footer class="footer desktop-footer">
