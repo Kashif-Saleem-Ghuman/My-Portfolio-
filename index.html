@@ -36,7 +36,7 @@
       <span class="bar"></span>
     </div>
   </header>
- 
+
   <!----------- End of the top Nav bar section for desktop app -------------------- -->
 
   <main>
@@ -325,16 +325,17 @@
       <p class="contact__text desktop-contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <form action="https://formspree.io/f/xeqdpkpy" method="post" class="contact__form desktop-contact-form">
+      <form action="https://formspree.io/f/xeqdpkpy" method="post" class="contact__form desktop-contact-form" id="form">
         <label class="none-mobile desktop-label-name" for="name">Your name:</label><br>
         <input type="text" required maxlength="30" placeholder="your name" name="name" id="name"
           class="name desktop-form-name">
         <label class="none-mobile desktop-label-email" for="email">Your email:</label><br>
-        <input type="email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="your email"
+        <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="your email"
           name="email" id="email" class="email desktop-form-email">
         <label class="none-mobile desktop-label-message" for="message">Message:</label><br>
         <textarea type="text" maxlength="500" placeholder="Enter your message here..." name="message" id="message"
           class="message desktop-message" required></textarea>
+        <div id="error"></div>
         <input type="submit" value="Start Collaboration"
           class="buttons contact__button animate__button desktop-form-button">
       </form>
@@ -351,7 +352,7 @@
         Project #0
       </h2>
       <ul class="modal-languages" id="modal-languages">
-        <li class="modal-links" id="modal-link" >HTML/CSS</li>
+        <li class="modal-links" id="modal-link">HTML/CSS</li>
         <li class="modal-links">Ruby on Rails</li>
         <li class="modal-links">JavaScript</li>
       </ul>
@@ -377,17 +378,19 @@
       </p>
       <div class="modal-button-container">
         <button class="modal-link-button-1 modal-link-button">
-          <a id="project-live" target="_blank" href="https://github.com/Kashif-Saleem-Ghuman">See Live <img src="images/ic_link.svg" alt="link logo"></a>
+          <a id="project-live" target="_blank" href="https://github.com/Kashif-Saleem-Ghuman">See Live <img
+              src="images/ic_link.svg" alt="link logo"></a>
         </button> <br>
         <button class="modal-link-button-2 modal-link-button">
-          <a  id="modal-project-source" target="_blank" href="https://github.com/Kashif-Saleem-Ghuman">See Source <img src="images/Vector.svg" alt="link logo"></a>
+          <a id="modal-project-source" target="_blank" href="https://github.com/Kashif-Saleem-Ghuman">See Source <img
+              src="images/Vector.svg" alt="link logo"></a>
         </button>
       </div>
       <div class="modal-previous-next none-mobile">
         <a id="modal-previous" href="#"><span class="arrow-1">&#8592</span> <span>Previous Project</span></a>
         <a id="modal-next" href="#"> <span>Next Project</span><span class="arrow-2">&#8594</span></a>
       </div>
-      
+
     </article>
   </section>
 
