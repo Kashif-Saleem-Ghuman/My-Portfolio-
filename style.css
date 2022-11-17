@@ -29,6 +29,12 @@
     display: none;
   }
 
+  #error {
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    justify-self: center;
+  }
+
   .full-screen {
     height: 100vh;
   }
@@ -1336,13 +1342,12 @@
     min-height: 8vw;
   }
 
-  #error{
+  #error {
     grid-column: 1/4;
     grid-row: 5/6;
     justify-self: center;
     font-family: 'Poppins', sans-serif;
     color: red;
-    
   }
 
   .desktop-form-button {
