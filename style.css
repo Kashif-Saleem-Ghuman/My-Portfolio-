@@ -1336,6 +1336,15 @@
     min-height: 8vw;
   }
 
+  #error{
+    grid-column: 1/4;
+    grid-row: 5/6;
+    justify-self: center;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    
+  }
+
   .desktop-form-button {
     grid-row: 5/6;
     grid-column: 1/4;
