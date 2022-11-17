@@ -32,7 +32,7 @@
   .full-screen {
     height: 100vh;
   }
-  
+
   .no-scroll {
     overflow-y: hidden;
     background-color: white;
@@ -626,7 +626,7 @@
     z-index: 101;
   }
 
-  .card-hidden.active{
+  .card-hidden.active {
     display: flex;
     height: 100vh;
     width: 100%;
@@ -669,6 +669,7 @@
     font-size: 5vw;
     font-weight: 700;
   }
+
   .modal-languages {
     grid-row: 3/4;
     display: flex;
@@ -676,7 +677,7 @@
     margin-bottom: 5vw;
   }
 
-  .modal-languages li{
+  .modal-languages li {
     list-style: none;
     color: #1a2236;
     font-family: 'Poppins', sans-serif;
@@ -1412,5 +1413,208 @@
   .hamburger {
     display: none;
     cursor: pointer;
+  }
+
+  .card-hidden {
+    display: none;
+
+    /* z-index: 101; */
+  }
+
+  .card-hidden.active {
+    display: flex;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    overflow-y: auto;
+    border: 2.5vw solid #1a2236;
+  }
+
+  .modal-container {
+    display: grid;
+    grid-template-rows: repeat(9, auto);
+    padding: 5vw;
+  }
+
+  .close-button {
+    grid-row: 1/2;
+    background: none;
+    border: none;
+    color: #1a2236;
+    font-size: 10vw;
+    display: flex;
+    justify-content: end;
+    padding-right: 1vw;
+    cursor: pointer;
+  }
+
+  #modal-project-name {
+    grid-row: 2/3;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 0 5vw 0;
+    color: #1a2236;
+    font-size: 5vw;
+    font-weight: 700;
+  }
+
+  .modal-languages {
+    grid-row: 3/4;
+    display: flex;
+    gap: 5vw;
+    margin-bottom: 5vw;
+    padding-left: 0;
+  }
+
+  .modal-languages li {
+    list-style: none;
+    color: #1a2236;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vw;
+    position: relative;
+    border: 1px solid #1a2236;
+    align-items: center;
+    padding: 2vw;
+  }
+
+  .modal-image-container {
+    grid-row: 4/5;
+    width: 100%;
+  }
+
+  .modal-image-container img {
+    width: 100%;
+  }
+
+  .modal-image-preview {
+    grid-row: 5/6;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: -1vw 0;
+  }
+
+  .modal-image-preview img {
+    width: 25%;
+  }
+
+  .modal-paragraph {
+    grid-row: 6/7;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    color: #1a2236;
+    line-height: 3vw;
+    font-size: 2vw;
+    padding: 5vw 0;
+    width: 60%;
+    justify-self: center;
+  }
+
+  .modal-button-container {
+    grid-row: 7/8;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    height: 10vw;
+    transition: all 1s ease-in-out 0.3s;
+  }
+
+  .modal-link-button-1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 5vw;
+    align-items: center;
+    background: none;
+    border-color: #1a2236;
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .modal-link-button-2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    height: 5vw;
+    align-items: center;
+    background: none;
+    border-color: #1a2236;
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .modal-link-button-1 a {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 5vw;
+  }
+
+  .modal-link-button-2 a {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 5vw;
+  }
+
+  .modal-link-button-1:hover {
+    color: rgb(152, 222, 222);
+    box-shadow: #1a2236 0 0 10px 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(152, 222, 222);
+    border-image: initial;
+  }
+
+  .modal-link-button-2:hover {
+    color: rgb(152, 222, 222);
+    box-shadow: #1a2236 0 0 10px 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(152, 222, 222);
+    border-image: initial;
+  }
+
+  .modal-previous-next {
+    grid-row: 9/10;
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    padding: 5vw 0;
+  }
+
+  #modal-previous {
+    grid-column: 2/3;
+    justify-self: start;
+    align-self: center;
+    text-decoration: none;
+    color: #1a2236;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+  }
+
+  #modal-next {
+    grid-column: 3/4;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+    color: #1a2236;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+  }
+
+  .arrow-1 {
+    font-size: 3vw;
+    padding-right: 2vw;
+  }
+
+  .arrow-2 {
+    font-size: 3vw;
+    padding-left: 2vw;
+    font-weight: 400;
   }
 }
