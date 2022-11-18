@@ -263,11 +263,7 @@
     justify-content: center;
     margin-left: 10px;
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> e03c99b5310642243006a8613ba390843cf81b17
   .container3 {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -902,13 +898,17 @@
     transition: all 0.5s ease-out;
   }
 
-  .desktop-navigation li a:hover,
-  .desktop-navigation li a:focus {
-    font-size: 110%;
+  .arrow a:hover {
+    font-size: 6vw;
   }
 
   .modal-arrow-3 a:hover {
     font-size: 4vw !important;
+  }
+
+  .desktop-navigation li a:hover,
+  .desktop-navigation li a:focus {
+    font-size: 110%;
   }
 
   .desktop-navigation {
@@ -1100,7 +1100,7 @@
     padding-bottom: 0.7vw !important;
     padding-top: 0.7vw !important;
   }
-  
+
   .languages {
     display: flex;
     background: #98dede;
@@ -1141,7 +1141,6 @@
     color: #1a2236;
   }
 
-
   .see-this-project {
     width: 18vw;
     height: 4vw;
@@ -1171,10 +1170,6 @@
     justify-content: center;
     margin-left: 10px;
     font-size: 4vw;
-  }
-
-  .arrow a:hover {
-    font-size: 6vw;
   }
 
   .desktop-geometry-01 {
