@@ -94,8 +94,8 @@ projectCard.map((card, index) => document
     <article class="container2 desktop-project-1" id='card-${index}'>
         <img class="images img-${index}" src="${card.mainImage}" alt="A deccorative laptop background">
         <div class="description-container desc-container-${index}">
-          <h3 class="project-name">${card.projectTitle}</h3>
-            <div id="language-container">
+          <h3 class="project-name project-name-${index}">${card.projectTitle}</h3>
+            <div id="language-container" class="language-container-${index}">
             ${card.technology.map((tech) => `
             <div class="languages">
               <div class="text">${tech}</div>
@@ -103,8 +103,8 @@ projectCard.map((card, index) => document
             `)}
             </div>
           <div class="link-container see-more">
-            <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="javascript:openModal(${index})">&#x2192</a></div>
+            <div class="see-this-project see-this-project-${index}">See this project</div>
+            <div class="arrow modal-arrow-${index}"><a href="javascript:openModal(${index})">&#x2192</a></div>
           </div>
         </div>
       </article>
