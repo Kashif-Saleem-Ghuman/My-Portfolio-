@@ -226,6 +226,11 @@
     margin-left: 10px;
   }
 
+  .desktop-navigation li a:hover,
+  .desktop-navigation li a:focus {
+    font-size: 110%;
+  }
+
   #arrow a {
     font-size: 8vw;
     font-weight: 100;
@@ -1228,7 +1233,8 @@
     grid-template-columns: auto 38% auto;
     margin-top: 10vw;
     background: #f9f9fa;
-    background-image: url(images/image-geometry_6.svg),
+    background-image:
+      url(images/image-geometry_6.svg),
       url(images/image-geometry_7.svg);
     background-position: top left, bottom right !important;
     background-repeat: no-repeat, no-repeat;
@@ -1430,11 +1436,6 @@
     color: #92dcdc;
     width: 2.8vw;
     margin-bottom: 0.5vw;
-  }
-
-  .desktop-navigation li a:hover,
-  .desktop-navigation li a:focus {
-    font-size: 110%;
   }
 
   .hamburger {

@@ -151,7 +151,6 @@ const error = document.getElementById('error');
 const username = document.querySelector('#user-name');
 const message = document.querySelector('#message');
 
-
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   if (email.value !== email.value.toLowerCase() || email.value === '') {
@@ -171,7 +170,7 @@ function storeData() {
     message: message.value,
   };
 
-  localStorage.setItem('formData', JSON.stringify(formData)); 
+  localStorage.setItem('formData', JSON.stringify(formData));
 }
 
 function getData() {
@@ -190,4 +189,3 @@ getData();
 username.addEventListener('change', storeData);
 email.addEventListener('change', storeData);
 message.addEventListener('change', storeData);
-
