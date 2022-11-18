@@ -17,8 +17,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   body.classList.remove('no-scroll');
 }));
 
-// const arr = ['hello', 'hi', 'bye'];
-
 const projectCard = [
   {
     projectTitle: 'Project #1',
