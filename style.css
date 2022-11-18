@@ -263,7 +263,7 @@
     justify-content: center;
     margin-left: 10px;
   }
-
+  
   .container3 {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -1096,7 +1096,7 @@
     padding-bottom: 0.7vw !important;
     padding-top: 0.7vw !important;
   }
-
+  
   .languages {
     display: flex;
     background: #98dede;
@@ -1136,6 +1136,7 @@
     line-height: 1vw;
     color: #1a2236;
   }
+
 
   .see-this-project {
     width: 18vw;
