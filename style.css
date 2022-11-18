@@ -264,11 +264,6 @@
     margin-left: 10px;
   }
 
-  .desktop-navigation li a:hover,
-  .desktop-navigation li a:focus {
-    font-size: 110%;
-  }
-
   .container3 {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -760,6 +755,7 @@
   }
 }
 
+/* media Query */
 @media screen and (min-width: 768px) {
   * {
     margin: 0;
@@ -900,6 +896,11 @@
     text-decoration: none;
     color: #1a2236;
     transition: all 0.5s ease-out;
+  }
+
+  .desktop-navigation li a:hover,
+  .desktop-navigation li a:focus {
+    font-size: 110%;
   }
 
   .modal-arrow-3 a:hover {

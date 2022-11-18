@@ -161,7 +161,7 @@ form.addEventListener('submit', (e) => {
   form.submit();
 });
 
-// Local storage
+// Local storage form data
 
 function storeData() {
   const formData = {
