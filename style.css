@@ -1,7 +1,7 @@
 /* media Query */
 @media screen and (max-width: 767px) {
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
 
   * {
     margin: 0;
@@ -27,12 +27,6 @@
 
   #dot-image {
     display: none;
-  }
-
-  #error {
-    font-family: 'Poppins', sans-serif;
-    color: red;
-    justify-self: center;
   }
 
   .full-screen {
@@ -77,7 +71,7 @@
   }
 
   .heading #name {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 10vw;
     line-height: 15vw;
@@ -91,7 +85,7 @@
     width: 100%;
     left: 16px;
     top: 224px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 5vw;
@@ -133,7 +127,7 @@
   }
 
   .projects {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15vw;
@@ -165,7 +159,7 @@
     font-size: 8vw;
     line-height: 12vw;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     height: 5vw;
     margin-left: 2vw;
     margin-top: 2vw;
@@ -197,7 +191,7 @@
     line-height: 80%;
     color: #1a2236;
     align-self: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   .link-container {
@@ -212,7 +206,7 @@
   }
 
   #see-this-project {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 6vw;
     line-height: 7vw;
     text-align: center;
@@ -230,6 +224,11 @@
     display: flex;
     justify-content: center;
     margin-left: 10px;
+  }
+
+  .desktop-navigation li a:hover,
+  .desktop-navigation li a:focus {
+    font-size: 110%;
   }
 
   #arrow a {
@@ -257,7 +256,7 @@
   .about {
     display: flex;
     align-items: center;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-style: normal;
     font-size: 12vw;
     line-height: 100%;
@@ -274,7 +273,7 @@
     height: 36vw;
     left: 16px;
     top: 2932px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 4vw;
@@ -385,7 +384,7 @@
   }
 
   .contact__text {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -435,7 +434,7 @@
     top: 3090px;
     background: #1a2236;
     margin: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
@@ -486,7 +485,7 @@
   }
 
   .footer__button__text {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 5vw;
@@ -521,7 +520,7 @@
   }
 
   .h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 10vw;
@@ -536,7 +535,7 @@
     font-size: 2vw;
     line-height: 2vw;
     color: #7d7c84;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     position: absolute;
     margin-left: 1vw;
     margin-top: 1vw;
@@ -551,7 +550,7 @@
   }
 
   .mobile-heading {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     display: flex;
     margin-left: 3vw;
     margin-top: 5vw;
@@ -669,7 +668,7 @@
   } */
   #modal-project-name {
     grid-row: 2/3;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 0 0 5vw 0;
     color: #1a2236;
     font-size: 5vw;
@@ -686,7 +685,7 @@
   .modal-languages li {
     list-style: none;
     color: #1a2236;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 3vw;
     position: relative;
     border: 1px solid #1a2236;
@@ -717,7 +716,7 @@
 
   .modal-paragraph {
     grid-row: 6/7;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #1a2236;
     line-height: 3vw;
     font-size: 3vw;
@@ -813,7 +812,7 @@
     font-size: 2vw;
     line-height: 5vw;
     color: #1a2236;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   .desktop-navigation li a {
@@ -849,7 +848,7 @@
     justify-self: center;
     padding-left: 5vw;
     color: #1a2236;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
   }
 
   #dot-image {
@@ -890,7 +889,7 @@
     padding-left: 5vw;
     padding-right: 5vw;
     color: #1a2236;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   .desktop-container-grid {
@@ -908,7 +907,7 @@
     font-weight: 400;
     font-size: 7vw;
     line-height: 100%;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     color: #1a2236;
     transform: rotate(-90deg);
     align-self: center;
@@ -916,37 +915,44 @@
     padding-left: 23%;
   }
 
-  .desktop-project-1 {
+  #card-0 {
     grid-row: 1/3;
     grid-column: 4/9;
+    position: relative;
   }
 
-  .desktop-project-2 {
+  #card-1 {
     grid-row: 3/6;
     grid-column: 1/4;
+    position: relative;
   }
 
   .images {
     width: 100%;
   }
 
-  .desktop-project-3 {
+  #card-2 {
     grid-row: 6/8;
     grid-column: 1/5;
+    position: relative;
   }
 
-  .desktop-project-4 {
+  #card-3 {
     grid-row: 9/11;
     grid-column: 5/8;
+    position: relative;
   }
 
-  .desktop-project-5 {
+  #card-4 {
     grid-row: 5/7;
     grid-column: 6/9;
+    position: relative;
   }
 
-  .desktop-project-6 {
-    display: none;
+  #card-5 {
+    grid-row: 3/5;
+    grid-column: 6/9;
+    position: relative;
   }
 
   .desktop-project-7 {
@@ -954,14 +960,14 @@
     grid-column: 3/4;
   }
 
-  .desktop-description-container {
+  .description-container {
     grid-row: 2/3;
     grid-column: 4/9;
     background: rgba(26, 34, 54, 0.95);
     backdrop-filter: blur(12px);
   }
 
-  .desktop-language-container {
+  #language-container {
     display: flex;
     width: 35vw;
     justify-content: space-between;
@@ -970,7 +976,7 @@
     padding: 2vw;
   }
 
-  .desktop-languages {
+  .languages {
     display: flex;
     background: #98dede;
     justify-content: center;
@@ -980,14 +986,14 @@
     height: 1vw;
   }
 
-  .desktop-link-container {
+  .link-container {
     display: flex;
     align-items: center;
     margin-bottom: 2vw;
   }
 
-  .desktop-project-name {
-    font-family: 'Poppins', sans-serif;
+  .project-name {
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 3vw;
@@ -996,8 +1002,8 @@
     padding: 2vw;
   }
 
-  .desktop-text {
-    font-family: 'Poppins', sans-serif;
+  .text {
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 1.5vw;
@@ -1005,7 +1011,7 @@
     color: #1a2236;
   }
 
-  .desktop-see-this-project {
+  #see-this-project {
     width: 18vw;
     height: 4vw;
     left: 540px;
@@ -1015,7 +1021,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 27px;
@@ -1024,12 +1030,26 @@
     font-size: 1.5vw;
   }
 
-  .desktop-arrow {
+  #arrow {
     display: flex;
     justify-content: center;
     margin-left: 10px;
     padding-bottom: 1vw;
     font-size: 4vw;
+  }
+
+  #arrow a {
+    font-size: 8vw;
+    font-weight: 100;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  #arrow a:hover {
+    font-size: 10vw;
+    margin-bottom: 5px;
   }
 
   .desktop-geometry-01 {
@@ -1058,11 +1078,6 @@
   .desktop-geometry-4 {
     grid-row: 9/10;
     grid-column: 1/3;
-  }
-
-  .description-container,
-  .link-container {
-    display: none;
   }
 
   .desktop-geometry-5 {
@@ -1137,7 +1152,7 @@
   }
 
   .desktop-title-about {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 1.6vw;
@@ -1156,11 +1171,11 @@
     line-height: 3vw;
     padding-top: 2vw;
     letter-spacing: -0.0525em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   .desktop-about-title {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 7vw;
@@ -1169,7 +1184,7 @@
   }
 
   .desktop-my-intro {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.2vw;
@@ -1190,7 +1205,7 @@
   }
 
   .desktop-btn {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1.5vw;
     line-height: 2vw;
@@ -1218,7 +1233,9 @@
     grid-template-columns: auto 38% auto;
     margin-top: 10vw;
     background: #f9f9fa;
-    background-image: url(images/image-geometry_6.svg), url(images/image-geometry_7.svg);
+    background-image:
+      url(images/image-geometry_6.svg),
+      url(images/image-geometry_7.svg);
     background-position: top left, bottom right !important;
     background-repeat: no-repeat, no-repeat;
     background-size: 20vw 20vw, 20vw 20vw;
@@ -1235,7 +1252,7 @@
   .desktop-h2 {
     grid-row: 2/3;
     grid-column: 2/3;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 8vw;
@@ -1248,7 +1265,7 @@
   .desktop-contact-text {
     grid-row: 3/4;
     grid-column: 2/3;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.4vw;
@@ -1272,7 +1289,7 @@
   .desktop-label-name {
     grid-row: 1/2;
     grid-column: 1/2;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.05vw;
@@ -1287,7 +1304,7 @@
   .desktop-label-email {
     grid-row: 1/2;
     grid-column: 3/4;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.05vw;
@@ -1320,7 +1337,7 @@
   .desktop-label-message {
     grid-row: 3/4;
     grid-column: 1/2;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.05vw;
@@ -1342,14 +1359,6 @@
     min-height: 8vw;
   }
 
-  #error {
-    grid-column: 1/4;
-    grid-row: 5/6;
-    justify-self: center;
-    font-family: 'Poppins', sans-serif;
-    color: red;
-  }
-
   .desktop-form-button {
     grid-row: 5/6;
     grid-column: 1/4;
@@ -1358,7 +1367,7 @@
     background: #1a2236;
     width: 50%;
     justify-self: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1393,7 +1402,7 @@
     background: none;
     border: none;
     font-size: 1.8vw;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 5vw;
@@ -1406,7 +1415,7 @@
     margin: 0;
     justify-content: flex-end;
     color: #92dcdc;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   .desktop-socials {
@@ -1429,11 +1438,6 @@
     margin-bottom: 0.5vw;
   }
 
-  .desktop-navigation li a:hover,
-  .desktop-navigation li a:focus {
-    font-size: 110%;
-  }
-
   .hamburger {
     display: none;
     cursor: pointer;
@@ -1452,15 +1456,18 @@
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color: #1a2236;
     overflow-y: auto;
-    border: 2.5vw solid #1a2236;
+    padding: 20px;
+  }
+
+  .modal-bg {
+    background-color: #fff;
   }
 
   .modal-container {
     display: grid;
     grid-template-rows: repeat(9, auto);
-    padding: 5vw;
   }
 
   .close-button {
@@ -1477,7 +1484,7 @@
 
   #modal-project-name {
     grid-row: 2/3;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 0 0 5vw 0;
     color: #1a2236;
     font-size: 5vw;
@@ -1495,7 +1502,7 @@
   .modal-languages li {
     list-style: none;
     color: #1a2236;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 3vw;
     position: relative;
     border: 1px solid #1a2236;
@@ -1527,7 +1534,7 @@
   .modal-paragraph {
     grid-row: 6/7;
     align-self: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #1a2236;
     line-height: 3vw;
     font-size: 2vw;
@@ -1601,7 +1608,7 @@
     align-self: center;
     text-decoration: none;
     color: #1a2236;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 2vw;
   }
 
@@ -1611,7 +1618,7 @@
     align-self: center;
     text-decoration: none;
     color: #1a2236;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 2vw;
   }
 
