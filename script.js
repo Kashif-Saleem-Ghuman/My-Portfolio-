@@ -161,7 +161,7 @@ form.addEventListener('submit', (e) => {
 
 // Local storage
 
-const user = document.getElementById('user-name');
+const user = document.getElementById('username');
 const message = document.getElementById('message');
 
 function storeData() {
