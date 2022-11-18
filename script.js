@@ -143,7 +143,7 @@ function closeModal(index = null) {
 openModal();
 closeModal();
 
-// Form Validation
+// Form Validation With JavaScript
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const error = document.getElementById('error');
