@@ -89,7 +89,7 @@ function openModal(num = null) {
       technologyList += `<li>${listedItem}</li>`;
     });
 
-    const { images } = projectCard[num];
+    const { images } = projectCard[index];
     let imagesList = '';
     images.forEach((listedImage) => {
       imagesList += `<img src="${listedImage}"></img>`;
