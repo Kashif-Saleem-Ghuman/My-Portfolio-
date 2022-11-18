@@ -148,6 +148,9 @@ closeModal();
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const error = document.getElementById('error');
+const username = document.querySelector('#user-name');
+const message = document.querySelector('#message');
+
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -161,19 +164,14 @@ form.addEventListener('submit', (e) => {
 
 // Local storage
 
-const user = document.getElementById('username');
-const message = document.getElementById('message');
-
 function storeData() {
-  const formDataArray = {
-    username: user.value,
+  const formData = {
+    username: username.value,
     email: email.value,
     message: message.value,
   };
 
-  const formDataToStrinng = JSON.stringify(formDataArray);
-
-  localStorage.setItem('formData', formDataToStrinng);
+  localStorage.setItem('formData', JSON.stringify(formData)); 
 }
 
 function getData() {
@@ -181,17 +179,15 @@ function getData() {
     storeData();
   }
 
-  const parseFormData = (localStorage.getItem('formData'));
-
-  const localData = JSON.parse(parseFormData);
-
-  user.setAttribute('value', localData.username);
+  const localData = JSON.parse(localStorage.getItem('formData'));
+  username.setAttribute('value', localData.username);
   email.setAttribute('value', localData.email);
   message.textContent = localData.message;
 }
 
 getData();
 
-user.addEventListener('change', storeData);
+username.addEventListener('change', storeData);
 email.addEventListener('change', storeData);
 message.addEventListener('change', storeData);
+

@@ -158,19 +158,20 @@
       <p class="contact__text desktop-contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <form action="https://formspree.io/f/xeqdpkpy" method="post" class="contact__form desktop-contact-form">
-        <label class="none-mobile desktop-label-name" for="name">Your name:</label><br>
-        <input type="text" required maxlength="30" placeholder="your name" name="name" id="username"
-          class="name desktop-form-name">
-        <label class="none-mobile desktop-label-email" for="email">Your email:</label><br>
-        <input type="email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="your email"
-          name="email" id="email" class="email desktop-form-email">
-        <label class="none-mobile desktop-label-message" for="message">Message:</label><br>
-        <textarea type="text" maxlength="500" placeholder="Enter your message here..." name="message" id="message"
-          class="message desktop-message" required></textarea>
-        <input type="submit" value="Start Collaboration"
-          class="buttons contact__button animate__button desktop-form-button">
-      </form>
+        <form action="https://formspree.io/f/xeqdpkpy" method="post" class="contact__form desktop-contact-form" id="form">
+          <label class="none-mobile desktop-label-name" for="name">Your name:</label><br>
+          <input type="text" required maxlength="30" placeholder="your name" name="name" id="user-name"
+            class="name desktop-form-name">
+          <label class="none-mobile desktop-label-email" for="email">Your email:</label><br>
+          <input type="email"  placeholder="your email"
+            name="email" id="email" class="email desktop-form-email">
+          <label class="none-mobile desktop-label-message" for="message">Message:</label><br>
+          <textarea type="text" maxlength="500" placeholder="Enter your message here..." name="message" id="message"
+            class="message desktop-message" required></textarea>
+            <div id="error"></div>
+          <input type="submit" value="Start Collaboration"
+            class="buttons contact__button animate__button desktop-form-button">
+        </form>
     </section>
     <!-- ---------End of the Contact section for desktop app -------------------------- -->
   </main>
