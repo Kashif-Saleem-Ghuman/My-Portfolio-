@@ -131,12 +131,14 @@ function openModal(num = null) {
     document.getElementById('modal-project-source').href = projectCard[num].linkToSource;
 
     modal.classList.add('active');
+    body.classList.add('no-scroll');
   }
 }
 
 function closeModal(index = null) {
   if (index != null) {
     modal.classList.remove('active');
+    body.classList.remove('no-scroll');
   }
 }
 
