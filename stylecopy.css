@@ -33,44 +33,6 @@
     height: 100vh;
   }
 
-  .modal-link-button-2 a {
-    text-decoration: none;
-    color: #1a2236;
-    font-size: 4vw;
-    font-weight: 500;
-    line-height: 0;
-  }
-
-  .arrow a {
-    font-size: 8vw;
-    font-weight: 100;
-    background: none;
-    color: #fff;
-    text-decoration: none;
-    align-self: center;
-  }
-
-  .modal-link-button a {
-    text-decoration: none;
-    color: #1a2236;
-    font-size: 4vw;
-    font-weight: 500;
-    line-height: 5vw;
-  }
-
-  .modal-link-button-1 a {
-    text-decoration: none;
-    color: #1a2236;
-    font-size: 4vw;
-    font-weight: 500;
-    line-height: 0;
-  }
-
-  .arrow a:hover {
-    font-size: 10vw;
-    margin-bottom: 5px;
-  }
-
   .no-scroll {
     overflow-y: hidden;
     background-color: white;
@@ -243,7 +205,7 @@
     height: 15vw;
   }
 
-  .see-this-project {
+  #see-this-project {
     font-family: "Poppins", sans-serif;
     font-size: 6vw;
     line-height: 7vw;
@@ -258,10 +220,29 @@
     align-self: center;
   }
 
-  .arrow {
+  #arrow {
     display: flex;
     justify-content: center;
     margin-left: 10px;
+  }
+
+  .desktop-navigation li a:hover,
+  .desktop-navigation li a:focus {
+    font-size: 110%;
+  }
+
+  #arrow a {
+    font-size: 8vw;
+    font-weight: 100;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  #arrow a:hover {
+    font-size: 10vw;
+    margin-bottom: 5px;
   }
 
   .container3 {
@@ -648,12 +629,11 @@
   .card-hidden {
     display: none;
     z-index: 101;
-    background-color: rgba(0, 0, 0, 0.529);
   }
 
   .card-hidden.active {
     display: flex;
-    height: 105vh;
+    height: 100vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -663,8 +643,7 @@
   .modal-container {
     display: grid;
     grid-template-rows: repeat(8, auto);
-    padding: 5vw 10vw 0 5vw;
-    height: 100vh;
+    padding: 5vw;
   }
 
   .close-button {
@@ -672,17 +651,25 @@
     background: none;
     border: none;
     color: #1a2236;
-    font-size: 7vw;
+    font-size: 10vw;
     display: flex;
     justify-content: end;
+    padding-right: 1vw;
     cursor: pointer;
-    align-items: center;
-    height: 5vw;
   }
 
+  /* .modal-project-name {
+    grid-row: 2/3;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 0 5vw 0;
+    color: #1a2236;
+    font-size: 5vw;
+    font-weight: 700;
+  } */
   #modal-project-name {
     grid-row: 2/3;
     font-family: "Poppins", sans-serif;
+    padding: 0 0 5vw 0;
     color: #1a2236;
     font-size: 5vw;
     font-weight: 700;
@@ -691,7 +678,8 @@
   .modal-languages {
     grid-row: 3/4;
     display: flex;
-    gap: 2vw;
+    gap: 5vw;
+    margin-bottom: 5vw;
   }
 
   .modal-languages li {
@@ -701,7 +689,7 @@
     font-size: 3vw;
     position: relative;
     border: 1px solid #1a2236;
-    align-self: center;
+    align-items: center;
     padding: 2vw;
   }
 
@@ -712,16 +700,14 @@
 
   .modal-image-container img {
     width: 100%;
-    margin-bottom: -5vw;
   }
 
   .modal-image-preview {
     grid-row: 5/6;
     display: flex;
     width: 100%;
-    height: 100%;
     padding: 0;
-    margin: -7vw 0 0 0;
+    margin: -1vw 0;
   }
 
   .modal-image-preview img {
@@ -732,9 +718,9 @@
     grid-row: 6/7;
     font-family: "Poppins", sans-serif;
     color: #1a2236;
-    line-height: 4vw;
+    line-height: 3vw;
     font-size: 3vw;
-    padding: 0;
+    padding: 5vw 0;
   }
 
   .modal-button-container {
@@ -772,10 +758,6 @@
     max-width: 100vw;
   }
 
-  .no-scroll {
-    overflow-y: hidden;
-  }
-
   .img-0 {
     grid-row: 1/3;
     grid-column: 1/2;
@@ -784,27 +766,13 @@
   }
 
   .img-1 {
-    grid-row: 1/3 !important;
-    grid-column: 1/2 !important;
-    width: 100% !important;
-    z-index: 0 !important;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    width: 100%;
+    z-index: 0;
   }
 
   .img-2 {
-    grid-row: 1/3;
-    grid-column: 1/2;
-    width: 100%;
-    z-index: 0;
-  }
-
-  .img-3 {
-    grid-row: 1/3;
-    grid-column: 1/2;
-    width: 100%;
-    z-index: 0;
-  }
-
-  .img-4 {
     grid-row: 1/3;
     grid-column: 1/2;
     width: 100%;
@@ -817,25 +785,13 @@
   }
 
   .desc-container-1 {
-    grid-row: 2/3 !important;
-    grid-column: 1/2 !important;
+    grid-row: 2/3;
+    grid-column: 1/2;
   }
 
   .desc-container-2 {
     grid-row: 2/3;
     grid-column: 1/2;
-  }
-
-  .desc-container-3 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    height: 150%;
-  }
-
-  .desc-container-4 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    height: 150%;
   }
 
   .desktop-none {
@@ -861,26 +817,23 @@
   .modal-link-button-1 a {
     text-decoration: none;
     color: #1a2236;
-    font-size: 0.9vw;
+    font-size: 1.5vw;
     font-weight: 500;
-    line-height: 0;
+    line-height: 5vw;
   }
 
   .modal-link-button-2 a {
     text-decoration: none;
     color: #1a2236;
-    font-size: 0.9vw;
+    font-size: 1.5vw;
     font-weight: 500;
-    line-height: 0;
+    line-height: 5vw;
   }
 
-  .arrow a {
-    font-size: 5vw;
-    font-weight: 100;
-    background: none;
-    color: #fff;
-    text-decoration: none;
-    align-self: center;
+  .desktop-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
   }
 
   .desktop-arrow a {
@@ -892,35 +845,6 @@
     align-self: center;
   }
 
-  .modal-arrow-3 a {
-    font-size: 3.5vw !important;
-  }
-
-  .desktop-navigation li a {
-    text-decoration: none;
-    color: #1a2236;
-    transition: all 0.5s ease-out;
-  }
-
-  .arrow a:hover {
-    font-size: 6vw;
-  }
-
-  .modal-arrow-3 a:hover {
-    font-size: 4vw !important;
-  }
-
-  .desktop-navigation li a:hover,
-  .desktop-navigation li a:focus {
-    font-size: 110%;
-  }
-
-  .desktop-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 4vw;
-  }
-
   .desktop-navigation li {
     list-style-type: none;
     font-style: normal;
@@ -929,6 +853,12 @@
     line-height: 5vw;
     color: #1a2236;
     font-family: "Poppins", sans-serif;
+  }
+
+  .desktop-navigation li a {
+    text-decoration: none;
+    color: #1a2236;
+    transition: all 0.5s ease-out;
   }
 
   .desktop-container-hello {
@@ -1010,7 +940,7 @@
   }
 
   .desktop-projets-heading-1 {
-    grid-column: 1/3;
+    grid-column: 2/3;
     grid-row: 1/3;
     font-style: normal;
     font-weight: 400;
@@ -1036,7 +966,7 @@
     grid-column: 1/4;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 50% 33%;
+    grid-template-rows: 30% 70%;
   }
 
   .images {
@@ -1084,7 +1014,6 @@
     background: rgba(26, 34, 54, 0.95);
     backdrop-filter: blur(12px);
     opacity: 90%;
-    height: inherit;
   }
 
   #language-container {
@@ -1096,22 +1025,13 @@
     padding: 2vw;
   }
 
-  .language-container-4 {
-    padding-bottom: 0.7vw !important;
-  }
-
-  .language-container-3 {
-    padding-bottom: 0.7vw !important;
-    padding-top: 0.7vw !important;
-  }
-
   .languages {
     display: flex;
     background: #98dede;
     justify-content: center;
     align-items: center;
     font-size: 1.8vw;
-    padding: 2%;
+    padding: 1vw;
     height: 1vw;
   }
 
@@ -1131,11 +1051,6 @@
     padding: 2vw 0 1vw 2vw;
   }
 
-  .project-name-3 {
-    font-size: 1.8vw;
-    padding: 2vw 0 1vw 2vw !important;
-  }
-
   .text {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1145,7 +1060,7 @@
     color: #1a2236;
   }
 
-  .see-this-project {
+  #see-this-project {
     width: 18vw;
     height: 4vw;
     left: 540px;
@@ -1164,16 +1079,25 @@
     font-size: 1.5vw;
   }
 
-  .see-this-project-3 {
-    width: 13vw;
-    height: 2.5vw;
-  }
-
-  .arrow {
+  #arrow {
     display: flex;
     justify-content: center;
     margin-left: 10px;
+    padding-bottom: 1vw;
     font-size: 4vw;
+  }
+
+  #arrow a {
+    font-size: 5vw;
+    font-weight: 100;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  #arrow a:hover {
+    font-size: 6vw;
   }
 
   .desktop-geometry-01 {
@@ -1569,20 +1493,20 @@
 
   .card-hidden {
     display: none;
-    z-index: 101;
+
+    /* z-index: 101; */
   }
 
   .card-hidden.active {
     display: flex;
     box-sizing: border-box;
     height: 100vh;
-    width: 40%;
+    width: 100%;
     position: fixed;
     top: 0;
     background-color: #1a2236;
+    overflow-y: auto;
     padding: 20px;
-    left: 25%;
-    z-index: 200;
   }
 
   .modal-bg {
@@ -1591,7 +1515,7 @@
 
   .modal-container {
     display: grid;
-    grid-template-rows: auto auto auto auto auto auto auto 10%;
+    grid-template-rows: repeat(9, auto);
   }
 
   .close-button {
@@ -1599,7 +1523,7 @@
     background: none;
     border: none;
     color: #1a2236;
-    font-size: 2.5vw;
+    font-size: 10vw;
     display: flex;
     justify-content: end;
     padding-right: 1vw;
@@ -1609,35 +1533,34 @@
   #modal-project-name {
     grid-row: 2/3;
     font-family: "Poppins", sans-serif;
-    padding: 0 0 1vw 4.5vw;
+    padding: 0 0 5vw 0;
     color: #1a2236;
-    font-size: 2vw;
+    font-size: 5vw;
     font-weight: 700;
   }
 
   .modal-languages {
     grid-row: 3/4;
     display: flex;
-    gap: 1vw;
-    margin-bottom: 0.5vw;
-    padding-left: 6.5vw;
+    gap: 5vw;
+    margin-bottom: 5vw;
+    padding-left: 0;
   }
 
   .modal-languages li {
     list-style: none;
     color: #1a2236;
     font-family: "Poppins", sans-serif;
-    font-size: 1vw;
+    font-size: 3vw;
     position: relative;
     border: 1px solid #1a2236;
     align-items: center;
-    padding: 0.5vw;
+    padding: 2vw;
   }
 
   .modal-image-container {
     grid-row: 4/5;
-    width: 75%;
-    margin: auto auto;
+    width: 100%;
   }
 
   .modal-image-container img {
@@ -1647,9 +1570,9 @@
   .modal-image-preview {
     grid-row: 5/6;
     display: flex;
-    width: 75%;
+    width: 100%;
     padding: 0;
-    margin: auto auto;
+    margin: -1vw 0;
   }
 
   .modal-image-preview img {
@@ -1661,32 +1584,31 @@
     align-self: center;
     font-family: "Poppins", sans-serif;
     color: #1a2236;
-    line-height: 1;
-    font-size: 1vw;
-    padding: 1vw 0 0 0;
-    width: 75%;
+    line-height: 3vw;
+    font-size: 2vw;
+    padding: 5vw 0;
+    width: 60%;
     justify-self: center;
   }
 
   .modal-button-container {
     grid-row: 7/8;
     display: grid;
-    grid-template-columns: 10% 25% 25% 10%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     justify-content: space-around;
-    height: 0;
-    padding-top: 1vh;
+    height: 10vw;
     transition: all 1s ease-in-out 0.3s;
   }
 
   .modal-link-button-1 {
     grid-column: 2/3;
     grid-row: 1/2;
-    height: 2.5vw;
+    height: 5vw;
     align-items: center;
     background: none;
     border-color: #1a2236;
-    width: 100%;
+    width: 70%;
     align-self: center;
     justify-self: center;
   }
@@ -1694,11 +1616,11 @@
   .modal-link-button-2 {
     grid-column: 3/4;
     grid-row: 1/2;
-    height: 2.5vw;
+    height: 5vw;
     align-items: center;
     background: none;
     border-color: #1a2236;
-    width: 100%;
+    width: 70%;
     align-self: center;
     justify-self: center;
   }
@@ -1710,7 +1632,6 @@
     border-style: solid;
     border-color: rgb(152, 222, 222);
     border-image: initial;
-    cursor: pointer !important;
   }
 
   .modal-link-button-2:hover {
@@ -1720,15 +1641,13 @@
     border-style: solid;
     border-color: rgb(152, 222, 222);
     border-image: initial;
-    cursor: pointer !important;
   }
 
   .modal-previous-next {
     grid-row: 9/10;
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
-    padding: 0;
-    margin-bottom: -2vw;
+    padding: 5vw 0;
   }
 
   #modal-previous {
@@ -1738,7 +1657,7 @@
     text-decoration: none;
     color: #1a2236;
     font-family: "Poppins", sans-serif;
-    font-size: 1.2vw;
+    font-size: 2vw;
   }
 
   #modal-next {
@@ -1748,16 +1667,17 @@
     text-decoration: none;
     color: #1a2236;
     font-family: "Poppins", sans-serif;
-    font-size: 1.2vw;
+    font-size: 2vw;
   }
 
   .arrow-1 {
-    font-size: 2vw;
-    padding-right: 1vw;
+    font-size: 3vw;
+    padding-right: 2vw;
   }
 
   .arrow-2 {
-    font-size: 2vw;
-    padding-left: 1vw;
+    font-size: 3vw;
+    padding-left: 2vw;
+    font-weight: 400;
   }
 }

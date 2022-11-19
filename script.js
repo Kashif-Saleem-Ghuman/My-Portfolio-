@@ -17,8 +17,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   body.classList.remove('no-scroll');
 }));
 
-// const arr = ['hello', 'hi', 'bye'];
-
 const projectCard = [
   {
     projectTitle: 'Project #1',
@@ -92,10 +90,11 @@ const modal = document.querySelector('#modal');
 projectCard.map((card, index) => document
   .getElementById('desktop-portfolio').innerHTML += `
     <article class="container2 desktop-project-1" id='card-${index}'>
-        <img class="images" src="${card.mainImage}" alt="A deccorative laptop background">
-        <div class="description-container">
-          <h3 class="project-name">${card.projectTitle}</h3>
-            <div id="language-container">
+
+        <img class="images img-${index}" src="${card.mainImage}" alt="A deccorative laptop background">
+        <div class="description-container desc-container-${index}">
+          <h3 class="project-name project-name-${index}">${card.projectTitle}</h3>
+            <div id="language-container" class="language-container-${index}">
             ${card.technology.map((tech) => `
             <div class="languages">
               <div class="text">${tech}</div>
@@ -103,8 +102,8 @@ projectCard.map((card, index) => document
             `)}
             </div>
           <div class="link-container see-more">
-            <div id="see-this-project">See this project</div>
-            <div id="arrow"><a href="javascript:openModal(${index})">&#x2192</a></div>
+            <div class="see-this-project see-this-project-${index}">See this project</div>
+            <div class="arrow modal-arrow-${index}"><a href="javascript:openModal(${index})">&#x2192</a></div>    
           </div>
         </div>
       </article>
@@ -132,19 +131,21 @@ function openModal(num = null) {
     document.getElementById('modal-project-source').href = projectCard[num].linkToSource;
 
     modal.classList.add('active');
+    body.classList.add('no-scroll');
   }
 }
 
 function closeModal(index = null) {
   if (index != null) {
     modal.classList.remove('active');
+    body.classList.remove('no-scroll');
   }
 }
 
 openModal();
 closeModal();
 
-// Form Validation
+// Form Validation With JavaScript
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 const error = document.getElementById('error');
@@ -161,7 +162,7 @@ form.addEventListener('submit', (e) => {
   form.submit();
 });
 
-// Local storage
+// Local storage for form input
 
 function storeData() {
   const formData = {
